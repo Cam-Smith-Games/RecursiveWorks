@@ -1,0 +1,54 @@
+html,body{
+    margin: 0;
+}
+body {
+    padding: 0 10px 10px 10px;
+    background: rgb(50,50,50);
+}
+
+    body > h1 {
+        color: red;
+        font-size: 3em;
+        margin: 0.25em 0;
+        font-weight: normal;
+        font-family: Impact, Charcoal, sans-serif;
+        text-align: center;
+    }
+#canvas {
+    background: black;
+    border: 1px solid white;
+    border-radius: 0.25em;
+    width: 720px;
+    height: 480px;
+    width: calc(100vw - 20px);
+    /* 16:9 width:height ratio -> 9/16 = .5625  */
+    /* 9/16 * 20px padding = 11.25px */
+    height: calc(56.25vw - 11.25px);
+
+}
+
+
+
+/* #region settings */
+#settings {
+    margin: 0 -0.5em 0.5em -0.5em;
+    overflow: hidden; /* necessary for height when children are floating */
+}
+#settings div {
+    float: left;
+    width: calc(25% - 1em);
+    margin: 0 0.5em;
+}
+#settings input {
+    width: calc(100% - 1em - 2px);
+    border: 2px solid red;
+    border-radius: 0.25em;
+    padding: 0.5em;
+    outline: none;
+}
+#settings label {
+    display: block;
+    color: white;
+}
+
+/* #endregion settings */
